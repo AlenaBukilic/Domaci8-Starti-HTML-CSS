@@ -1,0 +1,775 @@
+/* 01. general */
+/* 02. header */
+/* 03. main */
+/* 03.01. section about */
+/* 03.02 section portfolio */
+/* 03.03 section services */
+/* 03.04. clients */
+/* 04. blog */
+/* 05. contact form */
+/* 06. footer */
+/* 07. smaller screen */
+
+/* 01. general */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #969696;
+    letter-spacing: .5px;
+    background-color: #f7f7f7;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* 02. header */
+
+nav {
+	width: 30%;
+    float: right;
+
+}
+
+.mobile-btn {
+	display: none;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline;
+	padding: 15px;
+	font-size: 13px;
+}
+
+nav ul {
+	background-color: transparent;
+	margin-top: 50px;
+    margin-right: 50px;
+}
+
+li a {
+	text-decoration: none;
+	color: whitesmoke;
+
+}
+
+a:hover {
+	color: #0cbb58;
+}
+
+.menu {
+	font-size: 25px;
+	background-color: transparent;
+	color: whitesmoke;
+	border:none;
+}
+.cover {
+	margin-top: 0px;
+	width: 100%;
+	height: 700px;
+	background: url("http://demo.akilathiwanka.info/atlas-html/images/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.headline {
+	width: 100%;
+    height: auto;
+    color: whitesmoke;
+    float: left;
+    margin-top: 10%;
+    margin-left: 10%;
+
+}
+
+.headline h1 {
+	font-size: 70px;
+	font-weight: 900;
+}
+
+.headline h5 {
+	background-color: #0cbb58;
+	width: 35%;
+    font-size: 25px;
+    padding: 15px;
+}
+
+/* 03. main */
+
+/* 03.01. section about */
+
+.about {
+	margin-top: 100px;
+	margin-left: 15%;
+	margin-right: 15%;
+	text-align: center;
+}
+
+.about h2 {
+	color: #13141d;
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: 25px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.about p {
+	margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+.about p em {
+	color: #13141d;
+}
+
+article {
+	display: inline-block;
+}
+
+.about article {
+	background-color: #fff;
+}
+
+.left {
+	float: left;
+    margin: 50px;
+    padding: 10px;
+    text-align: right;
+    vertical-align: top;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.left img {
+	border-radius: 50%;
+	margin-right: 65px;
+}
+
+.left span {
+	color: #2eb267;
+	font-size: 15px;
+}
+
+.right {
+	float: right;
+    margin: 50px 50px 50px 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.right h3 {
+	font-size: 25px;
+	color: #13141d; 
+}
+
+.right h6 {
+	font-size: 15px;
+	color: #13141d;
+	font-weight: 100;
+	margin-bottom: 10px;
+}
+
+.progres-bar {
+	background: #f7f7f7;
+    height: 20px;
+    width: 300px;
+}
+
+.progres{
+    background-color: #0cbb58;
+    height: 20px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.one {
+	width: 95%;
+}
+
+.two {
+	width: 83%;
+}
+
+.three {
+	width: 90%;
+}
+
+.four {
+	width: 88%;
+}
+
+/* 03.02 section portfolio */
+
+.portfolio {
+	background-color: #fff;
+	text-align: center;
+	margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.portfolio h2 {
+	color: #13141d;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+span a {
+	color: #969696;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 13px;
+}
+
+span a:hover {
+	color: #13141d;
+}
+
+.projects {
+	margin:50px;
+
+}
+
+.project {
+	height: 240px;
+	width: 360px;
+	display: inline-block;
+	margin-bottom: 25px;
+	position: relative;
+	overflow: hidden;
+	vertical-align: top;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+ 	height: 100%;
+  	width: 100%;
+  	transition: all .4s ease-in-out;
+}
+
+
+.project:hover .overlay {
+    opacity: 0.9;
+    background-color: rgba(12,187,88, 0.8);
+    transform: scale(1.1);
+}
+
+.project span {
+	display: none;
+}
+
+.project h4 {
+	display: none;
+}
+
+.project:hover h4 {
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	display: inline;
+}
+
+.project:hover .fa-search {
+	color: #fff;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	display: inline;
+
+}
+
+.project:hover .fa-link {
+	color: #fff;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	right: 40%;
+	display: inline;
+}
+
+div.project:nth-child(3n+2) {
+	margin:0 25px;
+}
+
+
+/* 03.03 section services */
+
+.services {
+	text-align: center;
+	margin-bottom: 70px;
+    margin-top: 100px;
+
+}
+
+.services h2 {
+	color: #13141d;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.services-list {
+	display: inline-block;
+	height: 240px;
+	width: 30%;
+	margin-bottom: 25px;
+	padding: 20px;
+}
+
+.green {
+	color: #0cbb58;
+    font-size: 120px;
+    margin: 10px 0 25px;
+}
+
+
+.services-list h6 {
+	color: #13141d;
+	font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+/* 03.04. clients */
+
+.clients {
+	text-align: center;
+	background-color: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.clients-list {
+	display: inline-block;
+	width: 30%;
+	margin-bottom: 25px;
+	padding: 20px;
+}
+
+.green2 {
+	color: #0cbb58;
+    font-size: 72px;
+}
+
+.clients-list h2 {
+	color: #13141d;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.clients-list {
+	font-size: 18px;
+}
+
+/* 04. blog */
+
+.blog {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 200px;
+	padding-bottom: 100px;
+}
+
+.blog h2 {
+	color: #13141d;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.blog-post {
+	display: inline-block;
+    height: 300px;
+    width: 30%;
+    margin-bottom: 25px;
+    padding: 20px;
+    text-align: left;
+    vertical-align: top;
+
+}
+
+.post-thumb {
+	position: relative;
+	overflow: hidden;
+}
+
+.blog-post img {
+	position: relative;
+	transition: all .4s ease-in-out;
+}
+
+.blog-post img:hover {
+	opacity: 0.7;
+	transform: scale(1.1);
+}
+
+.img-details {
+	position: absolute;
+    margin-top: -35px;
+    color: whitesmoke;
+}
+
+.date {
+	padding: 20px;
+}
+
+.comment {
+	padding-left: 160px;
+    font-size: 20px;
+}
+
+.blog-post a {
+	text-decoration: none;
+	color: #13141d;
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.blog-post a:hover {
+	color: #13141d;
+}
+
+.blog-post h5 {
+	margin-bottom: 0;
+}
+
+.blog-post h6 {
+	margin-top: 2px;
+	font-size: 12px;
+	font-weight: 100;
+	margin-bottom: 0;
+}
+
+.blog-post h6 span {
+	color: #13141d;
+}
+
+.blog-post button {
+	background-color: transparent;
+    border: none;
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* 05. contact form */
+
+.contact {
+	background-color: #fff;
+	text-align: center;
+	margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.contact h2 {
+	color: #13141d;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.contact-list {
+	display: inline-block;
+	width: 30%;
+	margin-bottom: 25px;
+	padding: 20px;
+}
+
+.green3 {
+	color: #0cbb58;
+    font-size: 50px;
+
+}
+
+.contact-list h6 {
+	color: #13141d;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 7px;
+    margin-bottom: 0;
+ }
+
+
+.contact-list p {
+	font-size: 15px;
+}
+
+form {
+	text-align: left;
+    margin-left: 5%;
+}
+
+input {
+	height: 60px;
+    border: none;
+    background: #f7f7f7;
+    font-size: 15px;
+    margin-bottom: 30px;
+    width: 40%;
+    padding: 15px;
+    margin-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+textarea {
+	height: 120px;
+    border: none;
+    background: #f7f7f7;
+    font-size: 15px;
+    margin-bottom: 30px;
+    width: 84.5%;
+    padding: 15px;
+    margin-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+form button {
+    display: block;
+    margin: 10px 0 10px 50px;
+    padding: 20px;
+    font-family: 'montserrat';
+    border: none;
+    background: #0cbb58;
+    color: whitesmoke;
+    font-weight: 800;
+}
+
+form button:hover {
+	background: #13141d;
+}
+
+/* 06. footer */
+
+footer {
+	padding: 50px 0;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+footer h5 {
+	color: #13141d;
+    float: left;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.social {
+	float: right;
+}
+
+footer a {
+	color: #13141d;
+	padding: 5px;
+}
+
+footer a:hover {
+	color: #0cbb58;
+}
+
+
+/* 07. smaller screen */
+
+@media screen and (max-width: 700px) {
+
+		nav a, button {
+			display: none;
+		}
+
+		.mobile-btn {
+			display: inline;
+			color: whitesmoke;
+			font-size: 25px;
+			padding: 5px;
+			position: absolute;
+			z-index: 1;
+			margin-right: 0;
+		}
+
+		.cover {
+			margin-top: 0px;
+			width: 100%;
+			background: url("http://demo.akilathiwanka.info/atlas-html/images/bg.jpg");
+			background-size: contain;
+			background-repeat: no-repeat;
+			margin-bottom: -400px;
+		}
+
+		.headline {
+			width: 80%;
+			margin-top: 20%;
+			position: absolute;
+		}
+		
+
+		.headline h1 {
+			font-size: 30px;
+			font-weight: 900;
+			margin-bottom: 0px;
+			display: inline;
+			margin-top: 15%;
+		}
+
+		.headline h5 {
+			background-color: #0cbb58;
+		    width: 67%;
+		    font-size: 12px;
+		    margin: 0;
+		    padding: 0;
+		}
+
+		.main {
+			display: block;
+			width: 100%;
+			margin:0;
+		}
+
+		.about {
+			margin: 10%;
+		}
+
+		article {
+			box-sizing: border-box;
+			display: block;
+			text-align: center;
+			padding: 20px;
+			width: 100%;
+			overflow: hidden;
+		}
+
+		.left {
+			text-align: right;
+			float: none;
+			margin: 0;
+			padding-right: 0;
+		}
+
+		.right {
+			text-align: left;
+			float: none;
+			margin: 0;
+			padding-left: 0;
+			width: 100%;
+			overflow: hidden;
+		}
+
+		.progres-bar {
+			width: 100%;
+			overflow: hidden;
+		}
+
+		.projects {
+			margin: 5%;
+		}
+
+		.project {
+			display: block;
+			box-sizing: border-box;
+			vertical-align: middle;
+			width: 100%;
+		}
+
+		div.project:nth-child(3n+2) {
+			margin: 25px 0;
+		}
+
+		.portfolio-title {
+			width: 100%;
+			overflow: hidden;
+		}
+
+		.overlay {
+			height: auto;
+		}
+
+		.empty {
+			display: none;
+		}
+
+		.services-list {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+		.clients-list {
+			display: block;
+			width: 100%;
+			margin-bottom: 25px;
+			padding: 20px;
+		}
+
+		.blog-post {
+			display: block;
+		    height: auto;
+		    width: 100%;
+			margin-bottom: 25px;
+		    padding: 20px;
+		    text-align: left;
+		}
+
+		.contact-list {
+			display: block;
+			width: 100%;
+			height: auto;
+			margin-bottom: 25px;
+			padding: 20px;
+			text-align: left;
+		}
+
+		form {
+			text-align: left;
+		    margin-left: 5%;
+		    display: block;
+		}
+
+		input, textarea {
+		    margin-bottom: 30px;
+		    width: 90%;
+		    display: block;
+		    margin-left: 0;
+		}
+
+		form button {
+			margin-bottom: 30px;
+		    display: block;
+		    margin-left: 0;
+
+		}
+
+		footer {
+			display: block;
+			text-align: center;
+		}
+
+		.social {
+			float: none;
+			display: block;
+		}
+
+
+}
