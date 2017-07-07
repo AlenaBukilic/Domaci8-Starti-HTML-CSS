@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Austin Dalton</title>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -13,14 +14,24 @@
 		<div class="main-nav">
 			<div class="soc-nav">
 				<nav>
-					<ul>
-						<li class="mobile-btn"><span class="fa fa-bars"></span></li>
+					<ul class="unhidden">
+						<li class="mobile-btn"><span class="fa fa-beer"></span></li>
 						<li><a href="#"><span class="fa fa-facebook"></span></a></li>
 						<li><a href="#"><span class="fa fa-twitter"></span></a></li>
 						<li><a href="#"><span class="fa fa-google-plus"></span></a></li>
 						<li><a href="#"><span class="fa fa-dribbble"></span></a></li>
 						<li><a href="#"><span class="fa fa-instagram"></span></a></li>
 						<li><button class="menu"><span class="fa fa-bars"></span></button></li>
+					</ul>
+					<!-- Nav bar hidden -->
+					<ul class="hidden">
+						<li class="mobile-btn"><span class="fa fa-beer"></span></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><button class="menu"><span class="fa fa-times"></span></button></li>
 					</ul>
 				</nav>
 			</div>
@@ -230,5 +241,6 @@
 			</div>
 		</footer>
 	</div>
+	<script src="jquery.js"></script>
 </body>
 </html>
