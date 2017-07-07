@@ -38,6 +38,10 @@ nav {
 
 }
 
+.hidden {
+	display: none;
+}
+
 .mobile-btn {
 	display: none;
 }
@@ -96,7 +100,7 @@ a:hover {
 
 .headline h5 {
 	background-color: #0cbb58;
-	width: 35%;
+	width: 70%;
     font-size: 25px;
     padding: 15px;
 }
