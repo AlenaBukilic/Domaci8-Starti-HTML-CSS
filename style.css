@@ -11,6 +11,11 @@
 /* 07. smaller screen */
 
 /* 01. general */
+.big-screen {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
 * {
 	box-sizing: border-box;
 }
